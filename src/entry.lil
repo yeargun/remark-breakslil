@@ -1,0 +1,14 @@
+import { walkBreaks } from "./walk.lil";
+
+JsValue transformTree(JsValue tree, JsValue file) {
+  walkBreaks(tree);
+  return tree;
+}
+
+JsValue remarkBreaksCall(JsValue self, JsValue options) {
+  return transformTree;
+}
+
+export JsValue remarkBreaks = JS.method1(remarkBreaksCall);
+
+export JsValue default = remarkBreaks;

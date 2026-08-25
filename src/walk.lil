@@ -1,0 +1,67 @@
+int childCount(JsValue children) {
+  return JS.number(children["length"]).toInt();
+}
+
+void replaceChild(JsValue children, int index, JsValue parts) {
+  JS.invoke(children, "splice", index, 1);
+  int j = 0;
+  int n = childCount(parts);
+  while (j < n) {
+    JS.invoke(children, "splice", index + j, 0, parts[j]);
+    j = j + 1;
+  }
+}
+
+JsValue splitBreaks(string value) {
+  JsValue parts = JS.array();
+  string[] pieces = value.split("\n");
+  int i = 0;
+  int n = pieces.length;
+  while (i < n) {
+    string piece = pieces[i];
+    if (piece.length > 0) {
+      JS.push(parts, JS.object("type", "text", "value", piece));
+    }
+    if (i < n - 1) {
+      JS.push(parts, JS.object("type", "break"));
+    }
+    i = i + 1;
+  }
+  return parts;
+}
+
+export void walkBreaks(JsValue node) {
+  if (JS.isUndefined(node) || JS.isNullish(node)) {
+    return;
+  }
+  string ty = JS.string(node["type"]);
+  if (ty == "code" || ty == "inlineCode") {
+    return;
+  }
+  JsValue children = node["children"];
+  if (!JS.isArray(children)) {
+    return;
+  }
+  int i = 0;
+  int n = childCount(children);
+  while (i < n) {
+    JsValue child = children[i];
+    string cty = JS.string(child["type"]);
+    if (cty == "text") {
+      JsValue raw = child["value"];
+      if (raw is string) {
+        if (raw.indexOf("\n") >= 0) {
+          JsValue parts = splitBreaks(raw);
+          replaceChild(children, i, parts);
+          int added = childCount(parts);
+          n = n + added - 1;
+          i = i + added;
+          continue;
+        }
+      }
+    } else {
+      walkBreaks(child);
+    }
+    i = i + 1;
+  }
+}
