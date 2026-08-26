@@ -35,7 +35,7 @@ describe("@itslil/remark-breaks", () => {
     const tree = paragraphTree("a\nb")
     const transform = remarkBreaks.call({})
     const out = transform(tree)
-    assert.equal(out, tree)
+    assert.equal(out, undefined)
     const kids = tree.children[0].children
     assert.equal(kids.length, 3)
     assert.equal(kids[0].type, "text")

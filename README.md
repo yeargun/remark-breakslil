@@ -1,6 +1,6 @@
 # @itslil/remark-breaks
 
-remark-breaks reimplemented in LilScript. This is **not** the official [`remark-breaks`](https://github.com/remarkjs/remark-breaks) package.
+Official [`remark-breaks@4.0.0`](https://github.com/remarkjs/remark-breaks) algorithms rewritten in LilScript. Official test suite 21/21. Not affiliated with upstream.
 
 **Site:** [yeargun.github.io/remark-breakslil/](https://yeargun.github.io/remark-breakslil/)
 

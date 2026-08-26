@@ -10,9 +10,9 @@
   "warmupDiscard": 3,
   "comparison": "Official rows are an esbuild bundle of remark-breaks@4.0.0 plus its runtime graph, then Terser or esbuild. LilScript is the compiled npm file. Closed is extern_fields=false.",
   "spec": {
-    "total": 7,
-    "pass": 7,
-    "label": "package tests"
+    "total": 21,
+    "pass": 21,
+    "label": "official fixtures"
   },
   "play": {
     "kind": "md-plugin",
@@ -62,18 +62,18 @@
     {
       "id": "itslil",
       "name": "@itslil/remark-breaks · library",
-      "raw": 853,
-      "gzip9": 525,
-      "brotli11": 460,
+      "raw": 3123,
+      "gzip9": 1521,
+      "brotli11": 1362,
       "note": "LilScript js-module, extern_fields true. The npm ESM.",
       "primary": true
     },
     {
       "id": "itslil-closed",
       "name": "@itslil/remark-breaks · closed",
-      "raw": 765,
-      "gzip9": 465,
-      "brotli11": 400,
+      "raw": 3035,
+      "gzip9": 1459,
+      "brotli11": 1308,
       "note": "Same source, extern_fields false"
     }
   ],
