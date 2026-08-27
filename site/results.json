@@ -62,18 +62,18 @@
     {
       "id": "itslil",
       "name": "@itslil/remark-breaks · library",
-      "raw": 3123,
-      "gzip9": 1521,
-      "brotli11": 1362,
+      "raw": 1262,
+      "gzip9": 655,
+      "brotli11": 589,
       "note": "LilScript js-module, extern_fields true. The npm ESM.",
       "primary": true
     },
     {
       "id": "itslil-closed",
       "name": "@itslil/remark-breaks · closed",
-      "raw": 3035,
-      "gzip9": 1459,
-      "brotli11": 1308,
+      "raw": 1174,
+      "gzip9": 596,
+      "brotli11": 537,
       "note": "Same source, extern_fields false"
     }
   ],
