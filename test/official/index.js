@@ -9,8 +9,7 @@ import {unified} from 'unified'
 test('remarkBreaks', async function (t) {
   await t.test('should expose the public api', async function () {
     assert.deepEqual(Object.keys(await import('../../dist/remark-breaks.esm.js')).sort(), [
-      'default',
-      'remarkBreaks'
+      'default'
     ])
   })
 })

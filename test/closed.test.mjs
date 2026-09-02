@@ -11,13 +11,13 @@ describe("@itslil/remark-breaks closed lane", () => {
   it("ships a closed artifact whose exports stay callable", async () => {
     assert.equal(existsSync(closedPath), true, "dist/remark-breaks.closed.js")
     const closed = await import(pathToFileURL(closedPath).href)
-    assert.equal(typeof closed.remarkBreaks, "function")
-    assert.equal(closed.default, closed.remarkBreaks)
+    assert.deepEqual(Object.keys(closed), ["default"])
+    assert.equal(typeof closed.default, "function")
     const tree = {
       type: "root",
       children: [{ type: "paragraph", children: [{ type: "text", value: "a\nb" }] }],
     }
-    const transform = closed.remarkBreaks.call({})
+    const transform = closed.default.call({})
     transform(tree)
     assert.equal(tree.children[0].children[1].type, "break")
   })

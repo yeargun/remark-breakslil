@@ -1,6 +1,6 @@
 import { findAndReplace } from "./find.lil";
 
-JsValue breakNode(JsValue _s, JsValue _found) {
+JsValue breakNode(JsValue _self, JsValue _found) {
   return JS.object("type", "break");
 }
 

@@ -1,14 +1,10 @@
 import assert from "node:assert/strict"
-import { readFileSync } from "node:fs"
-import { dirname, resolve } from "node:path"
-import { fileURLToPath } from "node:url"
+import { createRequire } from "node:module"
 import { describe, it } from "node:test"
 
-const root = resolve(dirname(fileURLToPath(import.meta.url)), "..")
-const source = readFileSync(resolve(root, "dist/remark-breaks.esm.js"), "utf8")
-const { remarkBreaks, default: remarkBreaksDefault } = await import(
-  new URL("../dist/remark-breaks.esm.js", import.meta.url)
-)
+const module = await import("@itslil/remark-breaks")
+const commonjs = createRequire(import.meta.url)("@itslil/remark-breaks")
+const remarkBreaks = module.default
 
 function paragraphTree(value) {
   return {
@@ -18,17 +14,13 @@ function paragraphTree(value) {
 }
 
 describe("@itslil/remark-breaks", () => {
-  it("exports remarkBreaks and default", () => {
+  it("exposes the upstream public API and arity", () => {
+    assert.deepEqual(Object.keys(module), ["default"])
+    assert.deepEqual(Object.keys(commonjs), ["default"])
     assert.equal(typeof remarkBreaks, "function")
-    assert.equal(remarkBreaksDefault, remarkBreaks)
-    assert.match(source, / as remarkBreaks[},]/)
-    assert.match(source, / as default[},]/)
-  })
-
-  it("keeps tree field names as string data", () => {
-    assert.match(source, /"type"/)
-    assert.match(source, /"break"/)
-    assert.match(source, /"text"/)
+    assert.equal(typeof commonjs.default, "function")
+    assert.equal(remarkBreaks.length, 0)
+    assert.equal(remarkBreaks().length, 1)
   })
 
   it("splits text on newlines into text / break / text", () => {

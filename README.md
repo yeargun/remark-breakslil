@@ -1,6 +1,6 @@
 # @itslil/remark-breaks
 
-Official [`remark-breaks@4.0.0`](https://github.com/remarkjs/remark-breaks) algorithms rewritten in LilScript. Official test suite 21/21. Not affiliated with upstream.
+Official [`remark-breaks@4.0.0`](https://github.com/remarkjs/remark-breaks) algorithms rewritten in LilScript. Full test suite 20/20. Not affiliated with upstream.
 
 **Site:** [yeargun.github.io/remark-breakslil/](https://yeargun.github.io/remark-breakslil/)
 
@@ -15,6 +15,6 @@ Two compiles ship from the same `.lil` source:
 | **library** (npm) | `lilscript.toml` · `--target js-module` | reusable ESM. Export names and `extern class` keys stay. |
 | **closed** | `lilscript.closed.toml` · `--target js-module` | closed LilScript world. `extern class` keys may mangle. ESM export names stay so the lane is testable. |
 
-You publish the library lane. The closed artifact is `dist/remark-breaks.closed.js`.
+You publish the library lane. `dist/remark-breaks.closed.js` is diagnostic only.
 
 The LilScript compiler lives next door at `../lilscript`.

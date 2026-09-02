@@ -1,13 +1,13 @@
 import { newlineToBreak } from "./breaks.lil";
 
-JsValue transform(JsValue _s, JsValue tree, JsValue _file) {
+JsValue transform(JsValue _s, JsValue tree) {
   newlineToBreak(tree);
   return JS.undefined();
 }
 
-JsValue attach(JsValue _self, JsValue _options) {
-  return JS.method2(transform);
+JsValue attach(JsValue _self) {
+  return JS.method1(transform);
 }
 
-export JsValue remarkBreaks = JS.method1(attach);
+JsValue remarkBreaks = JS.method0(attach);
 export JsValue default = remarkBreaks;

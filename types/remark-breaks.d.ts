@@ -1,6 +1,6 @@
-export function remarkBreaks(
-  this?: unknown,
-  options?: unknown,
-): (tree: unknown, file?: unknown) => unknown
+interface Root {
+  type: "root"
+  children: Array<{type: string}>
+}
 
-export default remarkBreaks
+export default function remarkBreaks(): (tree: Root) => undefined
