@@ -1,0 +1,632 @@
+{
+  "schemaVersion": 1,
+  "name": "remark-breakslil",
+  "startedAt": "2026-09-10T20:38:49Z",
+  "machine": {
+    "provider": "Azure",
+    "instanceClass": "Standard_D16als_v7",
+    "cpu": "AMD EPYC 9V45 96-Core Processor",
+    "logicalCpus": 16,
+    "memoryBytes": 33648431104,
+    "os": "Ubuntu 24.04.4 LTS",
+    "kernel": "6.17.0-1022-azure",
+    "node": "v24.11.1",
+    "rayonThreads": 8,
+    "loadAtStart": [
+      1.50830078125,
+      1.6474609375,
+      1.87744140625
+    ],
+    "loadAtEnd": [
+      2.87548828125,
+      1.955078125,
+      1.97216796875
+    ]
+  },
+  "compiler": {
+    "commit": "4dc4e3337d9ffd758d65e3852682d6e13d9331c1",
+    "sha256": "0616048498eb9eb2e4bd75b39e8e6a083733ada647e16108edfee30ad183beeb"
+  },
+  "source": {
+    "repository": "https://github.com/remarkjs/remark-breaks.git",
+    "commit": "71f4ff3ca9f08b685dccf2fdb9882d8bbaea3388",
+    "package": "remark-breaks",
+    "version": "4.0.0",
+    "directory": "."
+  },
+  "portSource": {
+    "commit": "6c38bf6aa12cae02fcc197de7837692c05c81682",
+    "snapshot": "/tmp/lilscript-page-refresh-20260910/current/remark-breakslil"
+  },
+  "steps": {
+    "original-install": {
+      "command": [
+        "npm",
+        "install",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "cwd": "upstream",
+      "wallSeconds": 13.486513130000276,
+      "cpuSeconds": 9.126626,
+      "exitCode": 0,
+      "timedOut": false,
+      "log": "original-install.log",
+      "logSha256": "c0ebeba909897948b03091a00dededd35c2286b9302904e6ac4e7a546ce7c16a",
+      "tail": "npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.\nnpm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead\nnpm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported\nnpm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me\nnpm warn deprecated figgy-pudding@3.5.2: This module is no longer supported.\nnpm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead\nnpm warn deprecated libnpmconfig@1.2.1: This module is not used anymore. npm config is parsed by npm itself and by @npmcli/config\nnpm warn deprecated glob@8.1.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me\nnpm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me\nnpm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.\n\nadded 1660 packages in 13s\n"
+    },
+    "lilscript-install": {
+      "command": [
+        "npm",
+        "ci",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "cwd": "port",
+      "wallSeconds": 0.4645275089997085,
+      "cpuSeconds": 0.5912990000000002,
+      "exitCode": 0,
+      "timedOut": false,
+      "log": "lilscript-install.log",
+      "logSha256": "0fb93828e7cbaecb72a1db0a4e34695118e9b23e49fd4e7dcdb5caf91811f76d",
+      "tail": "\nadded 66 packages in 377ms\n"
+    },
+    "original-build-1": {
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "cwd": "upstream",
+      "wallSeconds": 1.4162090939998961,
+      "cpuSeconds": 2.6475609999999996,
+      "exitCode": 0,
+      "timedOut": false,
+      "log": "original-build-1.log",
+      "logSha256": "aba140b0e69a609364f14489eb5509e088bdea2b4d9cd50c141d7a4306253640",
+      "tail": "\n> remark-breaks@4.0.0 build\n> tsc --build --clean && tsc --build && type-coverage\n\n(94 / 94) 100.00%\ntype-coverage success.\n"
+    },
+    "lilscript-build-1": {
+      "command": [
+        "bash",
+        "-c",
+        "node scripts/build.mjs --compile --force"
+      ],
+      "cwd": "port",
+      "wallSeconds": 4.321123570999589,
+      "cpuSeconds": 16.390467,
+      "exitCode": 0,
+      "timedOut": false,
+      "log": "lilscript-build-1.log",
+      "logSha256": "8ab1c85edb08e2ee62a11f4ec9db57d0eeb0e62576b8a1e8da86636c0d743e97",
+      "tail": "wrote dist/remark-breaks.esm.js, dist/remark-breaks.cjs, dist/remark-breaks.umd.js, dist/remark-breaks.closed.js\n",
+      "invocations": [
+        {
+          "args": [
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/src/entry.lil",
+            "--target",
+            "js-module",
+            "--config",
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/lilscript.toml",
+            "-o",
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/dist/remark-breaks.raw.js"
+          ],
+          "startedAt": 1789072744.5907965,
+          "wallSeconds": 3.832224130630493,
+          "exitCode": 0,
+          "output": "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/dist/remark-breaks.raw.js",
+          "sha256": "f58fa328803ab3ac356014c48f06ca5de130ce27e898af8608d6e0104e6a5c5b"
+        },
+        {
+          "args": [
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/src/entry.lil",
+            "--target",
+            "js-module",
+            "--config",
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/lilscript.closed.toml",
+            "-o",
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/dist/remark-breaks.closed.js"
+          ],
+          "startedAt": 1789072748.4473147,
+          "wallSeconds": 0.3736577033996582,
+          "exitCode": 0,
+          "output": "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/dist/remark-breaks.closed.js",
+          "sha256": "6964fec1355a4172c4564f3692c873b14ae551e07cd6cebc59a7056017fb33ef"
+        }
+      ]
+    },
+    "lilscript-build-2": {
+      "command": [
+        "bash",
+        "-c",
+        "node scripts/build.mjs --compile --force"
+      ],
+      "cwd": "port",
+      "wallSeconds": 4.3209375999995245,
+      "cpuSeconds": 16.429855,
+      "exitCode": 0,
+      "timedOut": false,
+      "log": "lilscript-build-2.log",
+      "logSha256": "8ab1c85edb08e2ee62a11f4ec9db57d0eeb0e62576b8a1e8da86636c0d743e97",
+      "tail": "wrote dist/remark-breaks.esm.js, dist/remark-breaks.cjs, dist/remark-breaks.umd.js, dist/remark-breaks.closed.js\n",
+      "invocations": [
+        {
+          "args": [
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/src/entry.lil",
+            "--target",
+            "js-module",
+            "--config",
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/lilscript.toml",
+            "-o",
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/dist/remark-breaks.raw.js"
+          ],
+          "startedAt": 1789072748.9502416,
+          "wallSeconds": 3.8318655490875244,
+          "exitCode": 0,
+          "output": "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/dist/remark-breaks.raw.js",
+          "sha256": "f58fa328803ab3ac356014c48f06ca5de130ce27e898af8608d6e0104e6a5c5b"
+        },
+        {
+          "args": [
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/src/entry.lil",
+            "--target",
+            "js-module",
+            "--config",
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/lilscript.closed.toml",
+            "-o",
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/dist/remark-breaks.closed.js"
+          ],
+          "startedAt": 1789072752.8058035,
+          "wallSeconds": 0.3728961944580078,
+          "exitCode": 0,
+          "output": "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/dist/remark-breaks.closed.js",
+          "sha256": "6964fec1355a4172c4564f3692c873b14ae551e07cd6cebc59a7056017fb33ef"
+        }
+      ]
+    },
+    "original-build-2": {
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "cwd": "upstream",
+      "wallSeconds": 1.4164440069998818,
+      "cpuSeconds": 2.618392000000002,
+      "exitCode": 0,
+      "timedOut": false,
+      "log": "original-build-2.log",
+      "logSha256": "aba140b0e69a609364f14489eb5509e088bdea2b4d9cd50c141d7a4306253640",
+      "tail": "\n> remark-breaks@4.0.0 build\n> tsc --build --clean && tsc --build && type-coverage\n\n(94 / 94) 100.00%\ntype-coverage success.\n"
+    },
+    "original-build-3": {
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "cwd": "upstream",
+      "wallSeconds": 1.4164585790003912,
+      "cpuSeconds": 2.624977000000002,
+      "exitCode": 0,
+      "timedOut": false,
+      "log": "original-build-3.log",
+      "logSha256": "aba140b0e69a609364f14489eb5509e088bdea2b4d9cd50c141d7a4306253640",
+      "tail": "\n> remark-breaks@4.0.0 build\n> tsc --build --clean && tsc --build && type-coverage\n\n(94 / 94) 100.00%\ntype-coverage success.\n"
+    },
+    "lilscript-build-3": {
+      "command": [
+        "bash",
+        "-c",
+        "node scripts/build.mjs --compile --force"
+      ],
+      "cwd": "port",
+      "wallSeconds": 4.321201082000698,
+      "cpuSeconds": 16.383907999999998,
+      "exitCode": 0,
+      "timedOut": false,
+      "log": "lilscript-build-3.log",
+      "logSha256": "8ab1c85edb08e2ee62a11f4ec9db57d0eeb0e62576b8a1e8da86636c0d743e97",
+      "tail": "wrote dist/remark-breaks.esm.js, dist/remark-breaks.cjs, dist/remark-breaks.umd.js, dist/remark-breaks.closed.js\n",
+      "invocations": [
+        {
+          "args": [
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/src/entry.lil",
+            "--target",
+            "js-module",
+            "--config",
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/lilscript.toml",
+            "-o",
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/dist/remark-breaks.raw.js"
+          ],
+          "startedAt": 1789072756.1733265,
+          "wallSeconds": 3.848680257797241,
+          "exitCode": 0,
+          "output": "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/dist/remark-breaks.raw.js",
+          "sha256": "f58fa328803ab3ac356014c48f06ca5de130ce27e898af8608d6e0104e6a5c5b"
+        },
+        {
+          "args": [
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/src/entry.lil",
+            "--target",
+            "js-module",
+            "--config",
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/lilscript.closed.toml",
+            "-o",
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/dist/remark-breaks.closed.js"
+          ],
+          "startedAt": 1789072760.0460446,
+          "wallSeconds": 0.3718419075012207,
+          "exitCode": 0,
+          "output": "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/dist/remark-breaks.closed.js",
+          "sha256": "6964fec1355a4172c4564f3692c873b14ae551e07cd6cebc59a7056017fb33ef"
+        }
+      ]
+    },
+    "original-esm": {
+      "command": [
+        "node",
+        "/home/lilfarm/source-perf-20260910/tools/source-esm.mjs",
+        "/home/lilfarm/source-perf-20260910",
+        "remark-breakslil"
+      ],
+      "cwd": "upstream",
+      "wallSeconds": 0.2640370660001281,
+      "cpuSeconds": 0.3803300000000007,
+      "exitCode": 0,
+      "timedOut": false,
+      "log": "original-esm.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tail": ""
+    },
+    "lilscript-tests": {
+      "command": [
+        "bash",
+        "-c",
+        "npm run check:types && node --test test/*.test.mjs test/official/index.js"
+      ],
+      "cwd": "port",
+      "wallSeconds": 0.7652729660003388,
+      "cpuSeconds": 1.446371,
+      "exitCode": 0,
+      "timedOut": false,
+      "log": "lilscript-tests.log",
+      "logSha256": "ac10f78e425859fb88ad1fc658df63af6cae4dc72c6adabf2674931b0a3bac5c",
+      "tail": "\n> @itslil/remark-breaks@4.0.2 check:types\n> tsc --noEmit --strict --module NodeNext --moduleResolution NodeNext --target ES2022 test/types.test.ts\n\n\u25b6 @itslil/remark-breaks\n  \u2714 exposes the upstream public API and arity (4.616607ms)\n  \u2714 splits text on newlines into text / break / text (0.380894ms)\n  \u2714 does not split inside code or inlineCode (0.092569ms)\n  \u2714 works through processor.use(plugin) (0.102925ms)\n\u2714 @itslil/remark-breaks (5.732808ms)\n\u25b6 @itslil/remark-breaks closed lane\n  \u2714 ships a closed artifact whose exports stay callable (1.793903ms)\n\u2714 @itslil/remark-breaks closed lane (2.245974ms)\n\u25b6 remarkBreaks\n  \u2714 should expose the public api (0.994699ms)\n\u2714 remarkBreaks (1.415994ms)\n\u25b6 fixtures\n  \u2714 no space (3.289557ms)\n  \u2714 one space (0.602628ms)\n  \u2714 two spaces (0.839125ms)\n  \u2714 three spaces (0.319331ms)\n  \u2714 carriage return (0.324889ms)\n  \u2714 carriage return + line feed (0.284519ms)\n  \u2714 after phrasing (0.788729ms)\n  \u2714 before phrasing (0.559604ms)\n  \u2714 multiple (0.427534ms)\n  \u2714 none (0.314744ms)\n  \u2714 document (2.868873ms)\n\u2714 fixtures (11.409072ms)\n\u25b6 site\n  \u2714 has a markedlil-style lab with receipts (0.49162ms)\n\u2714 site (0.960086ms)\n\u2139 tests 20\n\u2139 suites 3\n\u2139 pass 20\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 100.373846\n"
+    }
+  },
+  "nativeBuilds": [
+    {
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "cwd": "upstream",
+      "wallSeconds": 1.4162090939998961,
+      "cpuSeconds": 2.6475609999999996,
+      "exitCode": 0,
+      "timedOut": false,
+      "log": "original-build-1.log",
+      "logSha256": "aba140b0e69a609364f14489eb5509e088bdea2b4d9cd50c141d7a4306253640",
+      "tail": "\n> remark-breaks@4.0.0 build\n> tsc --build --clean && tsc --build && type-coverage\n\n(94 / 94) 100.00%\ntype-coverage success.\n"
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "cwd": "upstream",
+      "wallSeconds": 1.4164440069998818,
+      "cpuSeconds": 2.618392000000002,
+      "exitCode": 0,
+      "timedOut": false,
+      "log": "original-build-2.log",
+      "logSha256": "aba140b0e69a609364f14489eb5509e088bdea2b4d9cd50c141d7a4306253640",
+      "tail": "\n> remark-breaks@4.0.0 build\n> tsc --build --clean && tsc --build && type-coverage\n\n(94 / 94) 100.00%\ntype-coverage success.\n"
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "cwd": "upstream",
+      "wallSeconds": 1.4164585790003912,
+      "cpuSeconds": 2.624977000000002,
+      "exitCode": 0,
+      "timedOut": false,
+      "log": "original-build-3.log",
+      "logSha256": "aba140b0e69a609364f14489eb5509e088bdea2b4d9cd50c141d7a4306253640",
+      "tail": "\n> remark-breaks@4.0.0 build\n> tsc --build --clean && tsc --build && type-coverage\n\n(94 / 94) 100.00%\ntype-coverage success.\n"
+    }
+  ],
+  "lilscriptBuilds": [
+    {
+      "command": [
+        "bash",
+        "-c",
+        "node scripts/build.mjs --compile --force"
+      ],
+      "cwd": "port",
+      "wallSeconds": 4.321123570999589,
+      "cpuSeconds": 16.390467,
+      "exitCode": 0,
+      "timedOut": false,
+      "log": "lilscript-build-1.log",
+      "logSha256": "8ab1c85edb08e2ee62a11f4ec9db57d0eeb0e62576b8a1e8da86636c0d743e97",
+      "tail": "wrote dist/remark-breaks.esm.js, dist/remark-breaks.cjs, dist/remark-breaks.umd.js, dist/remark-breaks.closed.js\n",
+      "invocations": [
+        {
+          "args": [
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/src/entry.lil",
+            "--target",
+            "js-module",
+            "--config",
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/lilscript.toml",
+            "-o",
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/dist/remark-breaks.raw.js"
+          ],
+          "startedAt": 1789072744.5907965,
+          "wallSeconds": 3.832224130630493,
+          "exitCode": 0,
+          "output": "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/dist/remark-breaks.raw.js",
+          "sha256": "f58fa328803ab3ac356014c48f06ca5de130ce27e898af8608d6e0104e6a5c5b"
+        },
+        {
+          "args": [
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/src/entry.lil",
+            "--target",
+            "js-module",
+            "--config",
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/lilscript.closed.toml",
+            "-o",
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/dist/remark-breaks.closed.js"
+          ],
+          "startedAt": 1789072748.4473147,
+          "wallSeconds": 0.3736577033996582,
+          "exitCode": 0,
+          "output": "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/dist/remark-breaks.closed.js",
+          "sha256": "6964fec1355a4172c4564f3692c873b14ae551e07cd6cebc59a7056017fb33ef"
+        }
+      ]
+    },
+    {
+      "command": [
+        "bash",
+        "-c",
+        "node scripts/build.mjs --compile --force"
+      ],
+      "cwd": "port",
+      "wallSeconds": 4.3209375999995245,
+      "cpuSeconds": 16.429855,
+      "exitCode": 0,
+      "timedOut": false,
+      "log": "lilscript-build-2.log",
+      "logSha256": "8ab1c85edb08e2ee62a11f4ec9db57d0eeb0e62576b8a1e8da86636c0d743e97",
+      "tail": "wrote dist/remark-breaks.esm.js, dist/remark-breaks.cjs, dist/remark-breaks.umd.js, dist/remark-breaks.closed.js\n",
+      "invocations": [
+        {
+          "args": [
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/src/entry.lil",
+            "--target",
+            "js-module",
+            "--config",
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/lilscript.toml",
+            "-o",
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/dist/remark-breaks.raw.js"
+          ],
+          "startedAt": 1789072748.9502416,
+          "wallSeconds": 3.8318655490875244,
+          "exitCode": 0,
+          "output": "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/dist/remark-breaks.raw.js",
+          "sha256": "f58fa328803ab3ac356014c48f06ca5de130ce27e898af8608d6e0104e6a5c5b"
+        },
+        {
+          "args": [
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/src/entry.lil",
+            "--target",
+            "js-module",
+            "--config",
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/lilscript.closed.toml",
+            "-o",
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/dist/remark-breaks.closed.js"
+          ],
+          "startedAt": 1789072752.8058035,
+          "wallSeconds": 0.3728961944580078,
+          "exitCode": 0,
+          "output": "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/dist/remark-breaks.closed.js",
+          "sha256": "6964fec1355a4172c4564f3692c873b14ae551e07cd6cebc59a7056017fb33ef"
+        }
+      ]
+    },
+    {
+      "command": [
+        "bash",
+        "-c",
+        "node scripts/build.mjs --compile --force"
+      ],
+      "cwd": "port",
+      "wallSeconds": 4.321201082000698,
+      "cpuSeconds": 16.383907999999998,
+      "exitCode": 0,
+      "timedOut": false,
+      "log": "lilscript-build-3.log",
+      "logSha256": "8ab1c85edb08e2ee62a11f4ec9db57d0eeb0e62576b8a1e8da86636c0d743e97",
+      "tail": "wrote dist/remark-breaks.esm.js, dist/remark-breaks.cjs, dist/remark-breaks.umd.js, dist/remark-breaks.closed.js\n",
+      "invocations": [
+        {
+          "args": [
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/src/entry.lil",
+            "--target",
+            "js-module",
+            "--config",
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/lilscript.toml",
+            "-o",
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/dist/remark-breaks.raw.js"
+          ],
+          "startedAt": 1789072756.1733265,
+          "wallSeconds": 3.848680257797241,
+          "exitCode": 0,
+          "output": "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/dist/remark-breaks.raw.js",
+          "sha256": "f58fa328803ab3ac356014c48f06ca5de130ce27e898af8608d6e0104e6a5c5b"
+        },
+        {
+          "args": [
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/src/entry.lil",
+            "--target",
+            "js-module",
+            "--config",
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/lilscript.closed.toml",
+            "-o",
+            "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/dist/remark-breaks.closed.js"
+          ],
+          "startedAt": 1789072760.0460446,
+          "wallSeconds": 0.3718419075012207,
+          "exitCode": 0,
+          "output": "/home/lilfarm/source-perf-20260910/ports/remark-breakslil/dist/remark-breaks.closed.js",
+          "sha256": "6964fec1355a4172c4564f3692c873b14ae551e07cd6cebc59a7056017fb33ef"
+        }
+      ]
+    }
+  ],
+  "protocol": {
+    "repetitions": 3,
+    "cleanOutputs": true,
+    "dependencyInstallationTimedSeparately": true,
+    "sourceArchives": "Pinned Git checkouts; original repository package build commands, followed by production ESM assembly.",
+    "workerUse": "Both implementations use the same machine and Node version. This shared build pool also runs unrelated jobs; timings are contextual wall times, with CPU time recorded separately."
+  },
+  "esm": {
+    "source": {
+      "repository": "https://github.com/remarkjs/remark-breaks.git",
+      "commit": "71f4ff3ca9f08b685dccf2fdb9882d8bbaea3388",
+      "package": "remark-breaks",
+      "version": "4.0.0",
+      "directory": "."
+    },
+    "entry": "index.js",
+    "scope": "remark-breaks@4.0.0 public ESM runtime graph; dependency installation excluded; this is a comparison bundle build, not the upstream vendor release pipeline",
+    "external": [],
+    "samples": [
+      {
+        "bundleSeconds": 0.007661224000000005,
+        "wallSeconds": 0.062607811
+      },
+      {
+        "bundleSeconds": 0.004176152999999999,
+        "wallSeconds": 0.034798246000000005
+      },
+      {
+        "bundleSeconds": 0.0035848119999999993,
+        "wallSeconds": 0.025603590999999995
+      }
+    ],
+    "medianSeconds": 0.034798246000000005,
+    "toolchain": {
+      "esbuild": "0.28.1",
+      "terser": "5.51.2"
+    },
+    "artifacts": [
+      {
+        "path": "original.esm.js",
+        "raw": 2989,
+        "gzip9": 1287,
+        "brotli11": 1175,
+        "sha256": "0ce74a1d0ae8efd78fc84a64f363bd0bd08e4789dcb23a5a28e69c4cb2e0c9f3"
+      },
+      {
+        "path": "original.unminified.js",
+        "raw": 8954,
+        "gzip9": 2642,
+        "brotli11": 2335,
+        "sha256": "65d2595f97b24bc7e58d0dd76aa4777093a134cad163d68824368dc057aca1f2"
+      },
+      {
+        "path": "original.terser-nomangle.js",
+        "raw": 4634,
+        "gzip9": 1630,
+        "brotli11": 1459,
+        "sha256": "35fa667e584dc3e07b0437b6234d7193592e4e238024803d3b9ee15890d926ff"
+      },
+      {
+        "path": "original.esbuild.js",
+        "raw": 3085,
+        "gzip9": 1375,
+        "brotli11": 1261,
+        "sha256": "3bf868388e6b0220bccef6b259384c6a2a55459afa10a7e860f09aa38a741d7b"
+      }
+    ],
+    "inputs": [
+      "node_modules/escape-string-regexp/index.js",
+      "node_modules/unist-util-is/lib/index.js",
+      "node_modules/unist-util-is/index.js",
+      "node_modules/unist-util-visit-parents/lib/color.js",
+      "node_modules/unist-util-visit-parents/lib/index.js",
+      "node_modules/unist-util-visit-parents/index.js",
+      "node_modules/mdast-util-find-and-replace/lib/index.js",
+      "node_modules/mdast-util-find-and-replace/index.js",
+      "node_modules/mdast-util-newline-to-break/lib/index.js",
+      "node_modules/mdast-util-newline-to-break/index.js",
+      "lib/index.js",
+      "index.js",
+      "public-esm-entry.mjs"
+    ]
+  },
+  "lilscriptArtifacts": [
+    {
+      "path": "dist/remark-breaks.umd.js",
+      "raw": 3777,
+      "gzip9": 1709,
+      "brotli11": 1562,
+      "sha256": "72a0fd7eaa1595d51d089ab46a9bb994825499a91a32e87cd0da45aaf64ed195"
+    },
+    {
+      "path": "dist/remark-breaks.closed.js",
+      "raw": 2694,
+      "gzip9": 1258,
+      "brotli11": 1112,
+      "sha256": "6964fec1355a4172c4564f3692c873b14ae551e07cd6cebc59a7056017fb33ef"
+    },
+    {
+      "path": "dist/remark-breaks.esm.js",
+      "raw": 2695,
+      "gzip9": 1265,
+      "brotli11": 1125,
+      "sha256": "da3c59db794a9ca01346d4f424a55bf04aa02005f6e46f7a879ea4c2012f0148"
+    },
+    {
+      "path": "dist/remark-breaks.raw.js",
+      "raw": 2607,
+      "gzip9": 1199,
+      "brotli11": 1066,
+      "sha256": "f58fa328803ab3ac356014c48f06ca5de130ce27e898af8608d6e0104e6a5c5b"
+    },
+    {
+      "path": "dist/remark-breaks.cjs",
+      "raw": 3670,
+      "gzip9": 1679,
+      "brotli11": 1539,
+      "sha256": "86f302b9fd4f83cd6a6583f418ff48895ec001ad352cea48653e565921244c54"
+    }
+  ],
+  "nativeBuildsSummary": {
+    "samples": 3,
+    "successful": 3,
+    "medianSeconds": 1.4164440069998818,
+    "minimumSeconds": 1.4162090939998961,
+    "maximumSeconds": 1.4164585790003912
+  },
+  "lilscriptBuildsSummary": {
+    "samples": 3,
+    "successful": 3,
+    "medianSeconds": 4.321123570999589,
+    "minimumSeconds": 4.3209375999995245,
+    "maximumSeconds": 4.321201082000698
+  },
+  "status": "complete",
+  "finishedAt": "2026-09-10T20:39:21Z",
+  "workerIp": "10.1.0.18"
+}

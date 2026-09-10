@@ -1,0 +1,76 @@
+{
+  "source": {
+    "repository": "https://github.com/remarkjs/remark-breaks.git",
+    "commit": "71f4ff3ca9f08b685dccf2fdb9882d8bbaea3388",
+    "package": "remark-breaks",
+    "version": "4.0.0",
+    "directory": "."
+  },
+  "entry": "index.js",
+  "scope": "remark-breaks@4.0.0 public ESM runtime graph; dependency installation excluded; this is a comparison bundle build, not the upstream vendor release pipeline",
+  "external": [],
+  "samples": [
+    {
+      "bundleSeconds": 0.007661224000000005,
+      "wallSeconds": 0.062607811
+    },
+    {
+      "bundleSeconds": 0.004176152999999999,
+      "wallSeconds": 0.034798246000000005
+    },
+    {
+      "bundleSeconds": 0.0035848119999999993,
+      "wallSeconds": 0.025603590999999995
+    }
+  ],
+  "medianSeconds": 0.034798246000000005,
+  "toolchain": {
+    "esbuild": "0.28.1",
+    "terser": "5.51.2"
+  },
+  "artifacts": [
+    {
+      "path": "original.esm.js",
+      "raw": 2989,
+      "gzip9": 1287,
+      "brotli11": 1175,
+      "sha256": "0ce74a1d0ae8efd78fc84a64f363bd0bd08e4789dcb23a5a28e69c4cb2e0c9f3"
+    },
+    {
+      "path": "original.unminified.js",
+      "raw": 8954,
+      "gzip9": 2642,
+      "brotli11": 2335,
+      "sha256": "65d2595f97b24bc7e58d0dd76aa4777093a134cad163d68824368dc057aca1f2"
+    },
+    {
+      "path": "original.terser-nomangle.js",
+      "raw": 4634,
+      "gzip9": 1630,
+      "brotli11": 1459,
+      "sha256": "35fa667e584dc3e07b0437b6234d7193592e4e238024803d3b9ee15890d926ff"
+    },
+    {
+      "path": "original.esbuild.js",
+      "raw": 3085,
+      "gzip9": 1375,
+      "brotli11": 1261,
+      "sha256": "3bf868388e6b0220bccef6b259384c6a2a55459afa10a7e860f09aa38a741d7b"
+    }
+  ],
+  "inputs": [
+    "node_modules/escape-string-regexp/index.js",
+    "node_modules/unist-util-is/lib/index.js",
+    "node_modules/unist-util-is/index.js",
+    "node_modules/unist-util-visit-parents/lib/color.js",
+    "node_modules/unist-util-visit-parents/lib/index.js",
+    "node_modules/unist-util-visit-parents/index.js",
+    "node_modules/mdast-util-find-and-replace/lib/index.js",
+    "node_modules/mdast-util-find-and-replace/index.js",
+    "node_modules/mdast-util-newline-to-break/lib/index.js",
+    "node_modules/mdast-util-newline-to-break/index.js",
+    "lib/index.js",
+    "index.js",
+    "public-esm-entry.mjs"
+  ]
+}
