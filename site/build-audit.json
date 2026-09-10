@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "name": "remark-breakslil",
+  "measuredAt": "2026-09-10T13:59:41Z",
+  "status": "verified",
+  "buildPassed": true,
+  "summary": "The fresh artifact was checked against the repository test command.",
+  "sourceCommit": "6c38bf6aa12cae02fcc197de7837692c05c81682",
+  "previousPublicCommit": "6c38bf6aa12cae02fcc197de7837692c05c81682",
+  "compiler": {
+    "commit": "63c2896a71e60cbcca7870fe979f9d6ecaff3452",
+    "sha256": "2319462ef7d858c8e2a5a767260aa4f80d325e0045afa0cc86cc122d1299b059",
+    "profile": "release",
+    "dirty": false
+  },
+  "machine": {
+    "cpu": "AMD EPYC 9V45 96-Core Processor",
+    "logicalCpus": 16,
+    "affinityCpus": 16,
+    "memoryBytes": 33648431104,
+    "os": "Ubuntu 24.04.4 LTS",
+    "kernel": "6.17.0-1022-azure",
+    "architecture": "x86_64",
+    "node": "v22.23.2",
+    "rayonThreads": 16,
+    "provider": "Azure",
+    "instanceClass": "Standard_D16als_v7",
+    "parallelPortBuildsOnMachine": 1,
+    "loadAtStart": [
+      7.22265625,
+      5.2529296875,
+      2.55810546875
+    ],
+    "loadAtEnd": [
+      7.04443359375,
+      5.24853515625,
+      2.5712890625
+    ],
+    "concurrencyNote": "The audit scheduled one port per worker, but this is a shared pool. Outside compiler jobs were observed during the run; timings are contextual wall times, not controlled speedup benchmarks."
+  },
+  "upstream": {
+    "name": "remark-breakslil",
+    "package": "remark-breaks",
+    "pinned": "4.0.0",
+    "latest": "4.0.0",
+    "source": "https://www.npmjs.com/package/remark-breaks"
+  },
+  "comparisonScope": "remark-breaks@4.0.0 public ESM runtime graph; dependency installation excluded; this is a comparison bundle build, not the upstream vendor release pipeline Sizes use canonical zlib 1.3.1 gzip-9 and Google Brotli 1.1.0 quality 11.",
+  "sizes": {
+    "previous": {
+      "id": "itslil",
+      "name": "@itslil/remark-breaks \u00b7 library",
+      "raw": 2746,
+      "gzip9": 1261,
+      "brotli11": 1131,
+      "note": "LilScript js-module, extern_fields true. The npm ESM.",
+      "primary": true
+    },
+    "current": {
+      "path": "dist/remark-breaks.esm.js",
+      "raw": 2695,
+      "gzip9": 1265,
+      "brotli11": 1125,
+      "sha256": "da3c59db794a9ca01346d4f424a55bf04aa02005f6e46f7a879ea4c2012f0148"
+    },
+    "upstream": {
+      "path": ".page-audit/upstream/official.esm.js",
+      "raw": 2989,
+      "gzip9": 1287,
+      "brotli11": 1175,
+      "sha256": "0ce74a1d0ae8efd78fc84a64f363bd0bd08e4789dcb23a5a28e69c4cb2e0c9f3"
+    }
+  },
+  "officialArtifacts": [
+    {
+      "path": ".page-audit/upstream/official.terser-nomangle.js",
+      "raw": 4634,
+      "gzip9": 1630,
+      "brotli11": 1459,
+      "sha256": "35fa667e584dc3e07b0437b6234d7193592e4e238024803d3b9ee15890d926ff"
+    },
+    {
+      "path": ".page-audit/upstream/official.esm.js",
+      "raw": 2989,
+      "gzip9": 1287,
+      "brotli11": 1175,
+      "sha256": "0ce74a1d0ae8efd78fc84a64f363bd0bd08e4789dcb23a5a28e69c4cb2e0c9f3"
+    },
+    {
+      "path": ".page-audit/upstream/official.unminified.js",
+      "raw": 8981,
+      "gzip9": 2647,
+      "brotli11": 2335,
+      "sha256": "cc56b30e62d9fb7bf5f730e02ddb114e734f003a0e3766e3abed8849a91b4689"
+    },
+    {
+      "path": ".page-audit/upstream/official.esbuild.js",
+      "raw": 3085,
+      "gzip9": 1375,
+      "brotli11": 1261,
+      "sha256": "3bf868388e6b0220bccef6b259384c6a2a55459afa10a7e860f09aa38a741d7b"
+    }
+  ],
+  "candidateArtifacts": [
+    {
+      "path": "dist/remark-breaks.umd.js",
+      "raw": 3777,
+      "gzip9": 1709,
+      "brotli11": 1562,
+      "sha256": "72a0fd7eaa1595d51d089ab46a9bb994825499a91a32e87cd0da45aaf64ed195"
+    },
+    {
+      "path": "dist/remark-breaks.closed.js",
+      "raw": 2694,
+      "gzip9": 1258,
+      "brotli11": 1112,
+      "sha256": "6964fec1355a4172c4564f3692c873b14ae551e07cd6cebc59a7056017fb33ef"
+    },
+    {
+      "path": "dist/remark-breaks.esm.js",
+      "raw": 2695,
+      "gzip9": 1265,
+      "brotli11": 1125,
+      "sha256": "da3c59db794a9ca01346d4f424a55bf04aa02005f6e46f7a879ea4c2012f0148"
+    },
+    {
+      "path": "dist/remark-breaks.raw.js",
+      "raw": 2607,
+      "gzip9": 1199,
+      "brotli11": 1066,
+      "sha256": "f58fa328803ab3ac356014c48f06ca5de130ce27e898af8608d6e0104e6a5c5b"
+    },
+    {
+      "path": "dist/remark-breaks.cjs",
+      "raw": 3670,
+      "gzip9": 1679,
+      "brotli11": 1539,
+      "sha256": "86f302b9fd4f83cd6a6583f418ff48895ec001ad352cea48653e565921244c54"
+    },
+    {
+      "path": ".page-audit/upstream/official.esbuild.js",
+      "raw": 3085,
+      "gzip9": 1375,
+      "brotli11": 1261,
+      "sha256": "3bf868388e6b0220bccef6b259384c6a2a55459afa10a7e860f09aa38a741d7b"
+    },
+    {
+      "path": ".page-audit/upstream/official.terser-nomangle.js",
+      "raw": 4634,
+      "gzip9": 1630,
+      "brotli11": 1459,
+      "sha256": "35fa667e584dc3e07b0437b6234d7193592e4e238024803d3b9ee15890d926ff"
+    },
+    {
+      "path": ".page-audit/upstream/official.unminified.js",
+      "raw": 8981,
+      "gzip9": 2647,
+      "brotli11": 2335,
+      "sha256": "cc56b30e62d9fb7bf5f730e02ddb114e734f003a0e3766e3abed8849a91b4689"
+    },
+    {
+      "path": ".page-audit/upstream/official.esm.js",
+      "raw": 2989,
+      "gzip9": 1287,
+      "brotli11": 1175,
+      "sha256": "0ce74a1d0ae8efd78fc84a64f363bd0bd08e4789dcb23a5a28e69c4cb2e0c9f3"
+    }
+  ],
+  "timing": {
+    "primaryCompilerSeconds": 3.6349544525146484,
+    "primaryScope": "One real compiler process, including code generation and codec-guided search; excludes subsequent package wrapping.",
+    "packageSeconds": 4.127623910000011,
+    "packageScope": "node scripts/build.mjs --compile --force; 2 successful compiler invocations plus package generation.",
+    "upstreamSeconds": 0.048481071000000014,
+    "upstreamScope": "remark-breaks@4.0.0 public ESM runtime graph; dependency installation excluded; this is a comparison bundle build, not the upstream vendor release pipeline",
+    "protocol": "Same shared worker for both lanes; one fresh LilScript package build; median of three sequential upstream ESM builds (PlayCanvas records one native reference build). Outside compiler jobs were observed in the pool, so contention is not excluded. Dependencies, tests and compression measurement are outside these build times.",
+    "upstreamSamples": [
+      {
+        "bundleSeconds": 0.0037056609999999994,
+        "wallSeconds": 0.067547754
+      },
+      {
+        "bundleSeconds": 0.0035161080000000026,
+        "wallSeconds": 0.03612992999999999
+      },
+      {
+        "bundleSeconds": 0.004268784000000011,
+        "wallSeconds": 0.048481071000000014
+      }
+    ]
+  },
+  "behavior": {
+    "command": "npm run check:types && node --test test/*.test.mjs test/official/index.js",
+    "summary": "Repository test command passed (exit 0). # tests 20 \u00b7 # pass 20 \u00b7 # fail 0",
+    "before": {
+      "exitCode": 0,
+      "failures": [],
+      "logSha256": "f939f6e78ce4cd9989e9b5e80ba81fff9160efbe6a9b45e5ea0ceda86714001b"
+    },
+    "after": {
+      "exitCode": 0,
+      "failures": [],
+      "tail": "\n> @itslil/remark-breaks@4.0.2 check:types\n> tsc --noEmit --strict --module NodeNext --moduleResolution NodeNext --target ES2022 test/types.test.ts\n\nTAP version 13\n# Subtest: @itslil/remark-breaks\n    # Subtest: exposes the upstream public API and arity\n    ok 1 - exposes the upstream public API and arity\n      ---\n      duration_ms: 0.78199\n      type: 'test'\n      ...\n    # Subtest: splits text on newlines into text / break / text\n    ok 2 - splits text on newlines into text / break / text\n      ---\n      duration_ms: 0.492827\n      type: 'test'\n      ...\n    # Subtest: does not split inside code or inlineCode\n    ok 3 - does not split inside code or inlineCode\n      ---\n      duration_ms: 0.115112\n      type: 'test'\n      ...\n    # Subtest: works through processor.use(plugin)\n    ok 4 - works through processor.use(plugin)\n      ---\n      duration_ms: 0.18727\n      type: 'test'\n      ...\n    1..4\nok 1 - @itslil/remark-breaks\n  ---\n  duration_ms: 2.360871\n  type: 'suite'\n  ...\n# Subtest: @itslil/remark-breaks closed lane\n    # Subtest: ships a closed artifact whose exports stay callable\n    ok 1 - ships a closed artifact whose exports stay callable\n      ---\n      duration_ms: 2.443163\n      type: 'test'\n      ...\n    1..1\nok 2 - @itslil/remark-breaks closed lane\n  ---\n  duration_ms: 3.000758\n  type: 'suite'\n  ...\n# Subtest: remarkBreaks\n    # Subtest: should expose the public api\n    ok 1 - should expose the public api\n      ---\n      duration_ms: 0.718164\n      type: 'test'\n      ...\n    1..1\nok 3 - remarkBreaks\n  ---\n  duration_ms: 1.158913\n  type: 'test'\n  ...\n# Subtest: fixtures\n    # Subtest: no space\n    ok 1 - no space\n      ---\n      duration_ms: 3.505562\n      type: 'test'\n      ...\n    # Subtest: one space\n    ok 2 - one space\n      ---\n      duration_ms: 0.82217\n      type: 'test'\n      ...\n    # Subtest: two spaces\n    ok 3 - two spaces\n      ---\n      duration_ms: 0.5821\n      type: 'test'\n      ...\n    # Subtest: three spaces\n    ok 4 - three spaces\n      ---\n      duration_ms: 0.410724\n      type: 'test'\n      ...\n    # Subtest: carriage return\n    ok 5 - carriage return\n      ---\n      duration_ms: 0.529703\n      type: 'test'\n      ...\n    # Subtest: carriage return + line feed\n    ok 6 - carriage return + line feed\n      ---\n      duration_ms: 0.44173\n      type: 'test'\n      ...\n    # Subtest: after phrasing\n    ok 7 - after phrasing\n      ---\n      duration_ms: 1.426033\n      type: 'test'\n      ...\n    # Subtest: before phrasing\n    ok 8 - before phrasing\n      ---\n      duration_ms: 0.62188\n      type: 'test'\n      ...\n    # Subtest: multiple\n    ok 9 - multiple\n      ---\n      duration_ms: 0.552507\n      type: 'test'\n      ...\n    # Subtest: none\n    ok 10 - none\n      ---\n      duration_ms: 0.298727\n      type: 'test'\n      ...\n    # Subtest: document\n    ok 11 - document\n      ---\n      duration_ms: 2.838766\n      type: 'test'\n      ...\n    1..11\nok 4 - fixtures\n  ---\n  duration_ms: 12.981964\n  type: 'test'\n  ...\n# Subtest: site\n    # Subtest: has a markedlil-style lab with receipts\n    ok 1 - has a markedlil-style lab with receipts\n      ---\n      duration_ms: 0.594119\n      type: 'test'\n      ...\n    1..1\nok 5 - site\n  ---\n  duration_ms: 1.161357\n  type: 'suite'\n  ...\n1..5\n# tests 20\n# suites 3\n# pass 20\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 89.629408\n",
+      "logSha256": "870ce5b7c63f726f3ba85f5d4cbc189145f36c8aade54ca73b9007847f52a46d"
+    }
+  },
+  "findings": [
+    "Published-to-fresh Brotli drift: -6 bytes (-0.53%). This includes port source/config changes and compiler changes."
+  ],
+  "primaryArtifact": "dist/remark-breaks.esm.js",
+  "beforePage": {
+    "url": "https://yeargun.github.io/remark-breakslil/",
+    "status": 200,
+    "sha256": "f29621cb22273c6cd2236ac9aeed81aed0b66cddc61ef7f5642fa00f42476c20",
+    "lastModified": "Wed, 02 Sep 2026 15:25:20 GMT"
+  },
+  "codecSha256": "9257fd055728895c11b9c4b0d882895d7d11bb3dd3495f560123879ca2bc3cd6",
+  "publicationArtifacts": [
+    {
+      "path": "dist/remark-breaks.umd.js",
+      "sha256": "72a0fd7eaa1595d51d089ab46a9bb994825499a91a32e87cd0da45aaf64ed195"
+    },
+    {
+      "path": "dist/remark-breaks.closed.js",
+      "sha256": "6964fec1355a4172c4564f3692c873b14ae551e07cd6cebc59a7056017fb33ef"
+    },
+    {
+      "path": "dist/remark-breaks.esm.js",
+      "sha256": "da3c59db794a9ca01346d4f424a55bf04aa02005f6e46f7a879ea4c2012f0148"
+    },
+    {
+      "path": "dist/remark-breaks.cjs",
+      "sha256": "86f302b9fd4f83cd6a6583f418ff48895ec001ad352cea48653e565921244c54"
+    }
+  ],
+  "publicationPolicy": "Promote freshly tested distribution",
+  "publicationBase": "6c38bf6aa12cae02fcc197de7837692c05c81682",
+  "publicationSourceFingerprint": "a1499460d05840605323584ad6f4c0352b293d7f78a1547749d4543937bd5b19"
+}
