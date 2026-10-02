@@ -1,0 +1,267 @@
+{
+  "compiler": {
+    "baseRevision": "f7d29bd9",
+    "binarySha256": "8ff44fabb92c949e68240ce6541038fd52e2f3c04d1a9ac470031e4238541c3a",
+    "hasLocalSourceChanges": true
+  },
+  "machine": {
+    "cpu": "AMD EPYC 7763 64-Core Processor",
+    "logicalCpus": 8,
+    "memoryGiB": 15.6,
+    "os": "Linux-7.0.0-1014-azure-x86_64-with-glibc2.39",
+    "node": "v20.19.0"
+  },
+  "lilscript": [
+    {
+      "library": "remark-breakslil",
+      "objective": "raw",
+      "command": [
+        "/home/azureuser/lilscript-rebuild-reports/2026-10-03-pages/bin/lilscript",
+        "--config",
+        "/home/azureuser/lilscript-rebuild-reports/2026-10-03-pages/configs/remark-breakslil-raw.toml",
+        "--target",
+        "js-module",
+        "--mode",
+        "production",
+        "--jobs",
+        "1",
+        "--out-dir",
+        "/home/azureuser/lilscript-rebuild-reports/2026-10-03-pages/artifacts/remark-breakslil/raw",
+        "--explain",
+        "json",
+        "--cache",
+        "off",
+        "--logical-work",
+        "2000000000"
+      ],
+      "wallSeconds": 3.0203019350010436,
+      "returncode": 0,
+      "compilerSha256": "8ff44fabb92c949e68240ce6541038fd52e2f3c04d1a9ac470031e4238541c3a",
+      "configSha256": "a18bc2879bb24e9260cf3b0782466a29770df6f37d70cb8514c40251b2f8da9a",
+      "measuredAt": "2026-10-02T22:46:54.246513+00:00",
+      "outputSha256": "25f8a8db84b955ca3242eee15a9decf62bd51d8d9380da45c6ce33bbc9502881",
+      "raw": 2566
+    },
+    {
+      "library": "remark-breakslil",
+      "objective": "gzip",
+      "command": [
+        "/home/azureuser/lilscript-rebuild-reports/2026-10-03-pages/bin/lilscript",
+        "--config",
+        "/home/azureuser/lilscript-rebuild-reports/2026-10-03-pages/configs/remark-breakslil-gzip.toml",
+        "--target",
+        "js-module",
+        "--mode",
+        "production",
+        "--jobs",
+        "1",
+        "--out-dir",
+        "/home/azureuser/lilscript-rebuild-reports/2026-10-03-pages/artifacts/remark-breakslil/gzip",
+        "--explain",
+        "json",
+        "--cache",
+        "off",
+        "--logical-work",
+        "2000000000"
+      ],
+      "wallSeconds": 8.784742130002996,
+      "returncode": 0,
+      "compilerSha256": "8ff44fabb92c949e68240ce6541038fd52e2f3c04d1a9ac470031e4238541c3a",
+      "configSha256": "3b99bad2d5e415a3096527a2f51d8327076f186a0669de9449a83f49562d3b5f",
+      "measuredAt": "2026-10-02T22:47:03.044665+00:00",
+      "outputSha256": "a3a86c131a070044bffd9d01cc6344cf31e8f0925598657b41466f28e5cf5102",
+      "raw": 2695
+    },
+    {
+      "library": "remark-breakslil",
+      "objective": "brotli",
+      "command": [
+        "/home/azureuser/lilscript-rebuild-reports/2026-10-03-pages/bin/lilscript",
+        "--config",
+        "/home/azureuser/lilscript-rebuild-reports/2026-10-03-pages/configs/remark-breakslil-brotli.toml",
+        "--target",
+        "js-module",
+        "--mode",
+        "production",
+        "--jobs",
+        "1",
+        "--out-dir",
+        "/home/azureuser/lilscript-rebuild-reports/2026-10-03-pages/artifacts/remark-breakslil/brotli",
+        "--explain",
+        "json",
+        "--cache",
+        "off",
+        "--logical-work",
+        "2000000000"
+      ],
+      "wallSeconds": 12.388806432998535,
+      "returncode": 0,
+      "compilerSha256": "8ff44fabb92c949e68240ce6541038fd52e2f3c04d1a9ac470031e4238541c3a",
+      "configSha256": "fd6c092ab594398b8cd54e17dff4887aefef2d20d6c33796773f5954f98f2b5f",
+      "measuredAt": "2026-10-02T22:47:15.461077+00:00",
+      "outputSha256": "cb8080c2d484f23bc720ecfd52246f7aaa7e5de58a56a04f1114bb628b1a7e8f",
+      "raw": 2711
+    }
+  ],
+  "upstream": {
+    "name": "remark-breakslil",
+    "package": "remark-breaks",
+    "version": "4.0.0",
+    "resolveDir": "/home/azureuser/lilscript-rebuild-reports/2026-10-02-optimization/vendor/remark-breaks/package",
+    "output": "/home/azureuser/lilscript-rebuild-reports/2026-10-03-pages/upstream/remark-breakslil",
+    "entry": "export {default} from \"/home/azureuser/lilscript-rebuild-reports/2026-10-02-optimization/vendor/remark-breaks/package/index.js\";",
+    "external": [],
+    "sharedExports": [
+      "default"
+    ],
+    "excludedExports": [],
+    "additionalExports": [],
+    "resolution": {
+      "platform": "neutral",
+      "conditions": [
+        "production"
+      ],
+      "mainFields": [
+        "module",
+        "main"
+      ],
+      "target": "es2020",
+      "defines": {
+        "process.env.NODE_ENV": "production"
+      }
+    },
+    "minifiers": [
+      {
+        "tool": "Terser",
+        "version": "5.51.2",
+        "esbuild": "0.28.1",
+        "artifact": "/home/azureuser/lilscript-rebuild-reports/2026-10-03-pages/upstream/remark-breakslil/terser.mjs",
+        "sha256": "d3f71fe7392cc6572bd62ce5b72b24d8acc0297f06eb195e53b72145c11bb13f",
+        "raw": 2988,
+        "imports": [],
+        "wallSeconds": 0.21148787999999877,
+        "command": [
+          "/home/azureuser/.nvm/versions/node/v20.19.0/bin/node",
+          "/home/azureuser/lilscript-rebuild-reports/2026-10-03-pages/upstream.mjs",
+          "child",
+          "/home/azureuser/lilscript-rebuild-reports/2026-10-03-pages/upstream/remark-breakslil/job.json",
+          "Terser"
+        ]
+      },
+      {
+        "tool": "esbuild",
+        "version": "0.28.1",
+        "esbuild": "0.28.1",
+        "artifact": "/home/azureuser/lilscript-rebuild-reports/2026-10-03-pages/upstream/remark-breakslil/esbuild.mjs",
+        "sha256": "3bf868388e6b0220bccef6b259384c6a2a55459afa10a7e860f09aa38a741d7b",
+        "raw": 3085,
+        "imports": [],
+        "wallSeconds": 0.059081632999999786,
+        "command": [
+          "/home/azureuser/.nvm/versions/node/v20.19.0/bin/node",
+          "/home/azureuser/lilscript-rebuild-reports/2026-10-03-pages/upstream.mjs",
+          "child",
+          "/home/azureuser/lilscript-rebuild-reports/2026-10-03-pages/upstream/remark-breakslil/job.json",
+          "esbuild"
+        ]
+      },
+      {
+        "tool": "Oxc",
+        "version": "via Vite 8.2.1",
+        "esbuild": "0.28.1",
+        "artifact": "/home/azureuser/lilscript-rebuild-reports/2026-10-03-pages/upstream/remark-breakslil/oxc.mjs",
+        "sha256": "a9c979c6d6d064c36798414ab0b552f1318fd19fbf13d192c2072b9a9a2f33d6",
+        "raw": 3004,
+        "imports": [],
+        "wallSeconds": 0.17395871100000113,
+        "command": [
+          "/home/azureuser/.nvm/versions/node/v20.19.0/bin/node",
+          "/home/azureuser/lilscript-rebuild-reports/2026-10-03-pages/upstream.mjs",
+          "child",
+          "/home/azureuser/lilscript-rebuild-reports/2026-10-03-pages/upstream/remark-breakslil/job.json",
+          "Oxc"
+        ]
+      }
+    ]
+  },
+  "sourceInputs": {
+    "root": 0,
+    "entries": [
+      {
+        "name": "index",
+        "module": 0
+      }
+    ],
+    "modules": [
+      {
+        "path": "/home/azureuser/remark-breakslil/src/entry.lil",
+        "bytes": 295,
+        "sha256": "c1b98432ef57a97f0bb2ba73ea141f479b83c24abe91c4c89a57e78db061ddcb",
+        "dependencies": [
+          1
+        ],
+        "dynamic_dependencies": []
+      },
+      {
+        "path": "/home/azureuser/remark-breakslil/src/breaks.lil",
+        "bytes": 333,
+        "sha256": "8286c21cc97f0e0a886986d8a8f4b15d2e9fd8c6d5e199543ee2d6e304e71306",
+        "dependencies": [
+          2
+        ],
+        "dynamic_dependencies": []
+      },
+      {
+        "path": "/home/azureuser/remark-breakslil/src/find.lil",
+        "bytes": 5112,
+        "sha256": "8418bcc23777528003fc4f03ff563d0d298d348da36d54eab0fd88bc2395ee14",
+        "dependencies": [
+          3,
+          4
+        ],
+        "dynamic_dependencies": []
+      },
+      {
+        "path": "/home/azureuser/remark-breakslil/src/host.lil",
+        "bytes": 1097,
+        "sha256": "e9bedaa40849954dd5ac8cbc7e2863a05deb524d80961eb859e0f08f664c2727",
+        "dependencies": [],
+        "dynamic_dependencies": []
+      },
+      {
+        "path": "/home/azureuser/remark-breakslil/src/visit.lil",
+        "bytes": 2236,
+        "sha256": "fe76cabe4ab9d8a02bc17929a8d1c0cf494fe327a111b772b3387b0ac9292ded",
+        "dependencies": [
+          3
+        ],
+        "dynamic_dependencies": []
+      }
+    ],
+    "host_modules": [],
+    "host_reserved": []
+  },
+  "validation": {
+    "checks": 42,
+    "objectives": [
+      {
+        "objective": "raw",
+        "checks": 14,
+        "suite": "upstream-derived/API"
+      },
+      {
+        "objective": "gzip",
+        "checks": 14,
+        "suite": "upstream-derived/API"
+      },
+      {
+        "objective": "brotli",
+        "checks": 14,
+        "suite": "upstream-derived/API"
+      }
+    ],
+    "scope": "Main ESM entry; selected corpora and API checks, not all package formats or complete upstream equivalence."
+  },
+  "workLimit": 2000000000,
+  "timingScope": "One sequential fresh-output build per objective/minifier. Upstream timing is ESM bundling and minification, not original-repository source compilation."
+}

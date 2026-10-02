@@ -1,173 +1,191 @@
 {
-  "schemaVersion": 2,
-  "measuredAt": "2026-09-10T20:39:21Z",
+  "schemaVersion": 4,
   "name": "remark-breakslil",
+  "package": "@itslil/remark-breaks",
+  "measuredAt": "2026-10-03T02:05:48.660082+03:00",
   "compiler": {
-    "commit": "4dc4e3337d9ffd758d65e3852682d6e13d9331c1",
-    "sha256": "0616048498eb9eb2e4bd75b39e8e6a083733ada647e16108edfee30ad183beeb"
+    "baseRevision": "f7d29bd9",
+    "binarySha256": "8ff44fabb92c949e68240ce6541038fd52e2f3c04d1a9ac470031e4238541c3a",
+    "hasLocalSourceChanges": true
   },
   "upstream": {
     "package": "remark-breaks",
     "version": "4.0.0",
-    "repository": "https://github.com/remarkjs/remark-breaks.git",
-    "commit": "71f4ff3ca9f08b685dccf2fdb9882d8bbaea3388"
-  },
-  "scope": "remark-breaks@4.0.0 public ESM runtime graph. Original ESM assembled from the pinned Git source build.",
-  "compatibility": "Runtime checks: 20/20 pass.",
-  "tests": {
-    "pass": 20,
-    "total": 20
-  },
-  "buildComplete": true,
-  "machine": {
-    "provider": "Azure",
-    "instanceClass": "Standard_D16als_v7",
-    "cpu": "AMD EPYC 9V45 96-Core Processor",
-    "logicalCpus": 16,
-    "memoryBytes": 33648431104,
-    "os": "Ubuntu 24.04.4 LTS",
-    "kernel": "6.17.0-1022-azure",
-    "node": "v24.11.1",
-    "rayonThreads": 8,
-    "loadAtStart": [
-      1.50830078125,
-      1.6474609375,
-      1.87744140625
+    "external": [],
+    "sharedExports": [
+      "default"
     ],
-    "loadAtEnd": [
-      2.87548828125,
-      1.955078125,
-      1.97216796875
-    ]
-  },
-  "build": {
-    "compilerSeconds": null,
-    "packageSeconds": 4.321123570999589,
-    "originalSeconds": 1.4164440069998818,
-    "originalEsmSeconds": 0.034798246000000005,
-    "packageScope": "node scripts/build.mjs --compile --force",
-    "originalScope": "npm run build",
-    "protocol": {
-      "repetitions": 3,
-      "cleanOutputs": true,
-      "dependencyInstallationTimedSeparately": true,
-      "sourceArchives": "Pinned Git checkouts; original repository package build commands, followed by production ESM assembly.",
-      "workerUse": "Both implementations use the same machine and Node version. This shared build pool also runs unrelated jobs; timings are contextual wall times, with CPU time recorded separately."
+    "excludedExports": [],
+    "additionalExports": [],
+    "resolution": {
+      "platform": "neutral",
+      "conditions": [
+        "production"
+      ],
+      "mainFields": [
+        "module",
+        "main"
+      ],
+      "target": "es2020",
+      "defines": {
+        "process.env.NODE_ENV": "production"
+      }
     }
   },
-  "esm": {
-    "lilscript": {
-      "raw": 2695,
-      "gzip9": 1265,
-      "brotli11": 1125,
-      "sha256": "da3c59db794a9ca01346d4f424a55bf04aa02005f6e46f7a879ea4c2012f0148",
-      "file": "./esm-comparison/lilscript.js"
-    },
-    "original": {
-      "raw": 2989,
-      "gzip9": 1287,
-      "brotli11": 1175,
-      "sha256": "0ce74a1d0ae8efd78fc84a64f363bd0bd08e4789dcb23a5a28e69c4cb2e0c9f3",
-      "file": "./esm-comparison/original.js"
-    }
+  "scope": "Portable main-entry ESM with matching shared named exports and external imports. The original uses production/default package conditions, keeping data-based entity decoding rather than relying on the DOM.",
+  "machine": {
+    "cpu": "AMD EPYC 7763 64-Core Processor",
+    "logicalCpus": 8,
+    "memoryGiB": 15.6,
+    "os": "Linux-7.0.0-1014-azure-x86_64-with-glibc2.39",
+    "node": "v20.19.0"
   },
-  "sourceBuild": {
-    "original": {
-      "complete": true,
-      "medianSeconds": 1.4164440069998818,
-      "minimumSeconds": 1.4162090939998961,
-      "maximumSeconds": 1.4164585790003912,
-      "samples": [
-        {
-          "command": [
-            "npm",
-            "run",
-            "build"
-          ],
-          "wallSeconds": 1.4162090939998961,
-          "cpuSeconds": 2.6475609999999996,
-          "exitCode": 0,
-          "timedOut": false,
-          "log": "original-build-1.log",
-          "logSha256": "aba140b0e69a609364f14489eb5509e088bdea2b4d9cd50c141d7a4306253640"
+  "objectives": [
+    {
+      "objective": "raw",
+      "metric": "raw",
+      "lilscript": {
+        "artifact": "./comparison-artifacts/lilscript-raw.mjs",
+        "sizes": {
+          "raw": 2566,
+          "gzip9": 1245,
+          "brotli11": 1127
         },
-        {
-          "command": [
-            "npm",
-            "run",
-            "build"
-          ],
-          "wallSeconds": 1.4164440069998818,
-          "cpuSeconds": 2.618392000000002,
-          "exitCode": 0,
-          "timedOut": false,
-          "log": "original-build-2.log",
-          "logSha256": "aba140b0e69a609364f14489eb5509e088bdea2b4d9cd50c141d7a4306253640"
+        "sha256": "25f8a8db84b955ca3242eee15a9decf62bd51d8d9380da45c6ce33bbc9502881",
+        "buildSeconds": 3.0203019350010436,
+        "config": "./comparison-artifacts/lilscript-raw.toml",
+        "configSha256": "a18bc2879bb24e9260cf3b0782466a29770df6f37d70cb8514c40251b2f8da9a"
+      },
+      "original": {
+        "tool": "Terser",
+        "version": "5.51.2",
+        "artifact": "./comparison-artifacts/original-terser.mjs",
+        "sizes": {
+          "raw": 2988,
+          "gzip9": 1284,
+          "brotli11": 1173
         },
-        {
-          "command": [
-            "npm",
-            "run",
-            "build"
-          ],
-          "wallSeconds": 1.4164585790003912,
-          "cpuSeconds": 2.624977000000002,
-          "exitCode": 0,
-          "timedOut": false,
-          "log": "original-build-3.log",
-          "logSha256": "aba140b0e69a609364f14489eb5509e088bdea2b4d9cd50c141d7a4306253640"
-        }
-      ]
+        "sha256": "d3f71fe7392cc6572bd62ce5b72b24d8acc0297f06eb195e53b72145c11bb13f",
+        "buildSeconds": 0.21148787999999877
+      },
+      "ratio": 0.8587684069611781
     },
-    "lilscript": {
-      "complete": true,
-      "medianSeconds": 4.321123570999589,
-      "minimumSeconds": 4.3209375999995245,
-      "maximumSeconds": 4.321201082000698,
-      "samples": [
-        {
-          "command": [
-            "bash",
-            "-c",
-            "node scripts/build.mjs --compile --force"
-          ],
-          "wallSeconds": 4.321123570999589,
-          "cpuSeconds": 16.390467,
-          "exitCode": 0,
-          "timedOut": false,
-          "log": "lilscript-build-1.log",
-          "logSha256": "8ab1c85edb08e2ee62a11f4ec9db57d0eeb0e62576b8a1e8da86636c0d743e97"
+    {
+      "objective": "gzip",
+      "metric": "gzip9",
+      "lilscript": {
+        "artifact": "./comparison-artifacts/lilscript-gzip.mjs",
+        "sizes": {
+          "raw": 2695,
+          "gzip9": 1186,
+          "brotli11": 1080
         },
-        {
-          "command": [
-            "bash",
-            "-c",
-            "node scripts/build.mjs --compile --force"
-          ],
-          "wallSeconds": 4.3209375999995245,
-          "cpuSeconds": 16.429855,
-          "exitCode": 0,
-          "timedOut": false,
-          "log": "lilscript-build-2.log",
-          "logSha256": "8ab1c85edb08e2ee62a11f4ec9db57d0eeb0e62576b8a1e8da86636c0d743e97"
+        "sha256": "a3a86c131a070044bffd9d01cc6344cf31e8f0925598657b41466f28e5cf5102",
+        "buildSeconds": 8.784742130002996,
+        "config": "./comparison-artifacts/lilscript-gzip.toml",
+        "configSha256": "3b99bad2d5e415a3096527a2f51d8327076f186a0669de9449a83f49562d3b5f"
+      },
+      "original": {
+        "tool": "Terser",
+        "version": "5.51.2",
+        "artifact": "./comparison-artifacts/original-terser.mjs",
+        "sizes": {
+          "raw": 2988,
+          "gzip9": 1284,
+          "brotli11": 1173
         },
-        {
-          "command": [
-            "bash",
-            "-c",
-            "node scripts/build.mjs --compile --force"
-          ],
-          "wallSeconds": 4.321201082000698,
-          "cpuSeconds": 16.383907999999998,
-          "exitCode": 0,
-          "timedOut": false,
-          "log": "lilscript-build-3.log",
-          "logSha256": "8ab1c85edb08e2ee62a11f4ec9db57d0eeb0e62576b8a1e8da86636c0d743e97"
-        }
-      ]
+        "sha256": "d3f71fe7392cc6572bd62ce5b72b24d8acc0297f06eb195e53b72145c11bb13f",
+        "buildSeconds": 0.21148787999999877
+      },
+      "ratio": 0.9236760124610592
     },
-    "scopeNote": "Both timings cover each repository\u2019s package build command; their output formats and build checks can differ.",
-    "cleanOutputs": true,
-    "installationExcluded": true
+    {
+      "objective": "brotli",
+      "metric": "brotli11",
+      "lilscript": {
+        "artifact": "./comparison-artifacts/lilscript-brotli.mjs",
+        "sizes": {
+          "raw": 2711,
+          "gzip9": 1202,
+          "brotli11": 1067
+        },
+        "sha256": "cb8080c2d484f23bc720ecfd52246f7aaa7e5de58a56a04f1114bb628b1a7e8f",
+        "buildSeconds": 12.388806432998535,
+        "config": "./comparison-artifacts/lilscript-brotli.toml",
+        "configSha256": "fd6c092ab594398b8cd54e17dff4887aefef2d20d6c33796773f5954f98f2b5f"
+      },
+      "original": {
+        "tool": "Terser",
+        "version": "5.51.2",
+        "artifact": "./comparison-artifacts/original-terser.mjs",
+        "sizes": {
+          "raw": 2988,
+          "gzip9": 1284,
+          "brotli11": 1173
+        },
+        "sha256": "d3f71fe7392cc6572bd62ce5b72b24d8acc0297f06eb195e53b72145c11bb13f",
+        "buildSeconds": 0.21148787999999877
+      },
+      "ratio": 0.9096334185848253
+    }
+  ],
+  "minifiers": [
+    {
+      "tool": "Terser",
+      "version": "5.51.2",
+      "artifact": "./comparison-artifacts/original-terser.mjs",
+      "sizes": {
+        "raw": 2988,
+        "gzip9": 1284,
+        "brotli11": 1173
+      },
+      "sha256": "d3f71fe7392cc6572bd62ce5b72b24d8acc0297f06eb195e53b72145c11bb13f",
+      "buildSeconds": 0.21148787999999877
+    },
+    {
+      "tool": "esbuild",
+      "version": "0.28.1",
+      "artifact": "./comparison-artifacts/original-esbuild.mjs",
+      "sizes": {
+        "raw": 3085,
+        "gzip9": 1375,
+        "brotli11": 1261
+      },
+      "sha256": "3bf868388e6b0220bccef6b259384c6a2a55459afa10a7e860f09aa38a741d7b",
+      "buildSeconds": 0.059081632999999786
+    },
+    {
+      "tool": "Oxc",
+      "version": "via Vite 8.2.1",
+      "artifact": "./comparison-artifacts/original-oxc.mjs",
+      "sizes": {
+        "raw": 3004,
+        "gzip9": 1307,
+        "brotli11": 1200
+      },
+      "sha256": "a9c979c6d6d064c36798414ab0b552f1318fd19fbf13d192c2072b9a9a2f33d6",
+      "buildSeconds": 0.17395871100000113
+    }
+  ],
+  "validation": {
+    "checks": 42,
+    "objectives": [
+      {
+        "objective": "raw",
+        "checks": 14,
+        "suite": "upstream-derived/API"
+      },
+      {
+        "objective": "gzip",
+        "checks": 14,
+        "suite": "upstream-derived/API"
+      },
+      {
+        "objective": "brotli",
+        "checks": 14,
+        "suite": "upstream-derived/API"
+      }
+    ],
+    "scope": "Main ESM entry; selected corpora and API checks, not all package formats or complete upstream equivalence."
   }
 }
