@@ -55,7 +55,13 @@
     "NOTICE.md",
     "README.md"
   ],
-  "sideEffects": false,
+  "sideEffects": [
+    "./dist/remark-breaks.cjs",
+    "./dist/remark-breaks.closed.js",
+    "./dist/remark-breaks.esm.js",
+    "./dist/remark-breaks.raw.js",
+    "./dist/remark-breaks.umd.js"
+  ],
   "engines": {
     "node": ">=18"
   },
