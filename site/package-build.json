@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "package": "@itslil/remark-breaks",
+  "version": "4.0.2",
+  "checkedAt": "2026-10-03T13:57:32.904500+00:00",
+  "compilerSha256": "8ff44fabb92c949e68240ce6541038fd52e2f3c04d1a9ac470031e4238541c3a",
+  "buildReport": "./comparison/package-build-report.json",
+  "packageBuildSeconds": 29.717,
+  "validation": {
+    "ok": true,
+    "checks": [
+      {
+        "suite": "test",
+        "command": [
+          "bash",
+          "-c",
+          "npm run check:types && node --test-concurrency=1 --test test/*.test.mjs test/official/index.js"
+        ],
+        "returncode": 0,
+        "log": "./comparison/package-validation/test.log",
+        "logSha256": "8107d31a0e31c49a5088c2bbafb2b273a55904274086511cb7804a7e7486d346"
+      },
+      {
+        "suite": "pack",
+        "command": [
+          "npm",
+          "run",
+          "check:pack"
+        ],
+        "returncode": 0,
+        "log": "./comparison/package-validation/pack.log",
+        "logSha256": "f3d11c9fda8cd8133c78fc7b3c2336bbc1481fe1c948ab5ef4a62ea2aeaa7df3"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "path": "src/breaks.lil",
+      "sha256": "8286c21cc97f0e0a886986d8a8f4b15d2e9fd8c6d5e199543ee2d6e304e71306"
+    },
+    {
+      "path": "src/entry.lil",
+      "sha256": "c1b98432ef57a97f0bb2ba73ea141f479b83c24abe91c4c89a57e78db061ddcb"
+    },
+    {
+      "path": "src/find.lil",
+      "sha256": "8418bcc23777528003fc4f03ff563d0d298d348da36d54eab0fd88bc2395ee14"
+    },
+    {
+      "path": "src/host.lil",
+      "sha256": "e9bedaa40849954dd5ac8cbc7e2863a05deb524d80961eb859e0f08f664c2727"
+    },
+    {
+      "path": "src/visit.lil",
+      "sha256": "fe76cabe4ab9d8a02bc17929a8d1c0cf494fe327a111b772b3387b0ac9292ded"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "dist/.lilscript/closed.json",
+      "bytes": 3758,
+      "sha256": "57d6e6d47a8bd83c6832b8be549f66ae6edf6202a3e89d07710938f4aa387f68"
+    },
+    {
+      "path": "dist/.lilscript/public.json",
+      "bytes": 7221,
+      "sha256": "22facd70d830ecad3b43f47fa371c7317520b169d1edfa643a53caeb6a8987f4"
+    },
+    {
+      "path": "dist/lilscript.manifest.json",
+      "bytes": 7273,
+      "sha256": "5dfce5fe7bcc8263491b1e016a9e4a79d787ed743a68308464d96b5a6a556e59"
+    },
+    {
+      "path": "dist/remark-breaks.cjs",
+      "bytes": 2866,
+      "sha256": "1474de2341e858ae0d0499cb8707948e4c72d8fddcc2a26f42a57b3e9cbec04e"
+    },
+    {
+      "path": "dist/remark-breaks.closed.js",
+      "bytes": 2759,
+      "sha256": "7139da56b76aff1bd9a5a88febfeede036879282e36e0d5a0154d1c763118f17"
+    },
+    {
+      "path": "dist/remark-breaks.d.ts",
+      "bytes": 135,
+      "sha256": "5e06dbd6c82ffff9a1daf907ff4bd8ee34ba5bce5d22683a1a2d87d68f131cfd"
+    },
+    {
+      "path": "dist/remark-breaks.esm.js",
+      "bytes": 2711,
+      "sha256": "cb8080c2d484f23bc720ecfd52246f7aaa7e5de58a56a04f1114bb628b1a7e8f"
+    },
+    {
+      "path": "dist/remark-breaks.raw.js",
+      "bytes": 2711,
+      "sha256": "cb8080c2d484f23bc720ecfd52246f7aaa7e5de58a56a04f1114bb628b1a7e8f"
+    },
+    {
+      "path": "dist/remark-breaks.umd.js",
+      "bytes": 2903,
+      "sha256": "4d45af21bc4283501d8cdbf0302444fa7fcaea83c1a68aecb5bcbdb6cb6d7d67"
+    }
+  ],
+  "scope": "Checked repository package; independent of npm publication. Main-entry objective comparisons have separate artifacts and timings."
+}

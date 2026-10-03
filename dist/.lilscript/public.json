@@ -1,0 +1,339 @@
+{
+  "version": 5,
+  "source_sha256": "e177ffbd7dd176ec146f0eb620b328cb659ac61100d212f331f30b92b84cf6df",
+  "inputs": {
+    "root": 0,
+    "entries": [
+      {
+        "name": "index",
+        "module": 0
+      }
+    ],
+    "modules": [
+      {
+        "path": "/home/azureuser/lilscript-rebuild-reports/2026-10-03-site-refresh/ports/remark-breakslil/src/entry.lil",
+        "bytes": 295,
+        "sha256": "c1b98432ef57a97f0bb2ba73ea141f479b83c24abe91c4c89a57e78db061ddcb",
+        "dependencies": [
+          1
+        ],
+        "dynamic_dependencies": []
+      },
+      {
+        "path": "/home/azureuser/lilscript-rebuild-reports/2026-10-03-site-refresh/ports/remark-breakslil/src/breaks.lil",
+        "bytes": 333,
+        "sha256": "8286c21cc97f0e0a886986d8a8f4b15d2e9fd8c6d5e199543ee2d6e304e71306",
+        "dependencies": [
+          2
+        ],
+        "dynamic_dependencies": []
+      },
+      {
+        "path": "/home/azureuser/lilscript-rebuild-reports/2026-10-03-site-refresh/ports/remark-breakslil/src/find.lil",
+        "bytes": 5112,
+        "sha256": "8418bcc23777528003fc4f03ff563d0d298d348da36d54eab0fd88bc2395ee14",
+        "dependencies": [
+          3,
+          4
+        ],
+        "dynamic_dependencies": []
+      },
+      {
+        "path": "/home/azureuser/lilscript-rebuild-reports/2026-10-03-site-refresh/ports/remark-breakslil/src/host.lil",
+        "bytes": 1097,
+        "sha256": "e9bedaa40849954dd5ac8cbc7e2863a05deb524d80961eb859e0f08f664c2727",
+        "dependencies": [],
+        "dynamic_dependencies": []
+      },
+      {
+        "path": "/home/azureuser/lilscript-rebuild-reports/2026-10-03-site-refresh/ports/remark-breakslil/src/visit.lil",
+        "bytes": 2236,
+        "sha256": "fe76cabe4ab9d8a02bc17929a8d1c0cf494fe327a111b772b3387b0ac9292ded",
+        "dependencies": [
+          3
+        ],
+        "dynamic_dependencies": []
+      }
+    ],
+    "host_modules": [],
+    "host_reserved": []
+  },
+  "outputs": [
+    {
+      "mode": "single",
+      "format": "esm",
+      "entries": [
+        {
+          "name": "index",
+          "file": "remark-breaks.esm.js",
+          "dynamic": false,
+          "closure": [
+            "remark-breaks.esm.js"
+          ],
+          "row": 1067,
+          "raw_row": 2711
+        }
+      ],
+      "files": [
+        {
+          "file": "remark-breaks.esm.js",
+          "role": "entry",
+          "source_map_for": null,
+          "label": [
+            "index"
+          ],
+          "modules": [
+            "entry.lil",
+            "breaks.lil",
+            "find.lil",
+            "host.lil",
+            "visit.lil"
+          ],
+          "anchored": true,
+          "imports": [],
+          "dynamic_imports": [],
+          "bytes": 2711,
+          "codec_bytes": 1067,
+          "sha256": "cb8080c2d484f23bc720ecfd52246f7aaa7e5de58a56a04f1114bb628b1a7e8f"
+        }
+      ],
+      "side_effects": [
+        "remark-breaks.esm.js"
+      ],
+      "codec_total": 1067,
+      "rows_total": 1067,
+      "setters": 0,
+      "output": "primary",
+      "codec": "brotli",
+      "codec_settings": {
+        "brotli": {
+          "quality": 11,
+          "window": 22,
+          "mode": "generic"
+        },
+        "gzip": {
+          "level": 9,
+          "window": 15
+        }
+      },
+      "policy_fingerprint": [
+        1,
+        200,
+        31,
+        9,
+        96,
+        68,
+        41,
+        27,
+        89,
+        65,
+        85,
+        61,
+        230,
+        100,
+        12,
+        196,
+        53,
+        126,
+        135,
+        192,
+        157,
+        236,
+        254,
+        186,
+        104,
+        199,
+        123,
+        32,
+        31,
+        254,
+        107,
+        214
+      ]
+    },
+    {
+      "mode": "single",
+      "format": "iife",
+      "entries": [
+        {
+          "name": "index",
+          "file": "remark-breaks.umd.js",
+          "dynamic": false,
+          "closure": [
+            "remark-breaks.umd.js"
+          ],
+          "row": 1161,
+          "raw_row": 2903
+        }
+      ],
+      "files": [
+        {
+          "file": "remark-breaks.umd.js",
+          "role": "entry",
+          "source_map_for": null,
+          "label": [
+            "index"
+          ],
+          "modules": [
+            "entry.lil",
+            "breaks.lil",
+            "find.lil",
+            "host.lil",
+            "visit.lil"
+          ],
+          "anchored": true,
+          "imports": [],
+          "dynamic_imports": [],
+          "bytes": 2903,
+          "codec_bytes": 1161,
+          "sha256": "4d45af21bc4283501d8cdbf0302444fa7fcaea83c1a68aecb5bcbdb6cb6d7d67"
+        }
+      ],
+      "side_effects": [
+        "remark-breaks.umd.js"
+      ],
+      "codec_total": 1161,
+      "rows_total": 1161,
+      "setters": 0,
+      "output": "browser",
+      "codec": "brotli",
+      "codec_settings": {
+        "brotli": {
+          "quality": 11,
+          "window": 22,
+          "mode": "generic"
+        },
+        "gzip": {
+          "level": 9,
+          "window": 15
+        }
+      },
+      "policy_fingerprint": [
+        244,
+        102,
+        119,
+        108,
+        112,
+        6,
+        1,
+        160,
+        156,
+        75,
+        193,
+        1,
+        253,
+        185,
+        141,
+        199,
+        173,
+        144,
+        90,
+        34,
+        172,
+        103,
+        232,
+        44,
+        85,
+        13,
+        86,
+        169,
+        65,
+        198,
+        44,
+        38
+      ]
+    },
+    {
+      "mode": "single",
+      "format": "cjs",
+      "entries": [
+        {
+          "name": "index",
+          "file": "remark-breaks.cjs",
+          "dynamic": false,
+          "closure": [
+            "remark-breaks.cjs"
+          ],
+          "row": 1138,
+          "raw_row": 2866
+        }
+      ],
+      "files": [
+        {
+          "file": "remark-breaks.cjs",
+          "role": "entry",
+          "source_map_for": null,
+          "label": [
+            "index"
+          ],
+          "modules": [
+            "entry.lil",
+            "breaks.lil",
+            "find.lil",
+            "host.lil",
+            "visit.lil"
+          ],
+          "anchored": true,
+          "imports": [],
+          "dynamic_imports": [],
+          "bytes": 2866,
+          "codec_bytes": 1138,
+          "sha256": "1474de2341e858ae0d0499cb8707948e4c72d8fddcc2a26f42a57b3e9cbec04e"
+        }
+      ],
+      "side_effects": [
+        "remark-breaks.cjs"
+      ],
+      "codec_total": 1138,
+      "rows_total": 1138,
+      "setters": 0,
+      "output": "cjs",
+      "codec": "brotli",
+      "codec_settings": {
+        "brotli": {
+          "quality": 11,
+          "window": 22,
+          "mode": "generic"
+        },
+        "gzip": {
+          "level": 9,
+          "window": 15
+        }
+      },
+      "policy_fingerprint": [
+        64,
+        161,
+        147,
+        11,
+        24,
+        64,
+        9,
+        216,
+        168,
+        246,
+        111,
+        123,
+        137,
+        59,
+        16,
+        135,
+        86,
+        8,
+        56,
+        117,
+        235,
+        168,
+        121,
+        8,
+        84,
+        124,
+        27,
+        164,
+        246,
+        117,
+        239,
+        65
+      ]
+    }
+  ]
+}
