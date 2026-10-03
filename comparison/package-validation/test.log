@@ -1,0 +1,140 @@
+
+> @itslil/remark-breaks@4.0.2 check:types
+> tsc --noEmit --strict --module NodeNext --moduleResolution NodeNext --target ES2022 test/types.test.ts
+
+TAP version 13
+# Subtest: @itslil/remark-breaks
+    # Subtest: exposes the upstream public API and arity
+    ok 1 - exposes the upstream public API and arity
+      ---
+      duration_ms: 1.516282
+      ...
+    # Subtest: splits text on newlines into text / break / text
+    ok 2 - splits text on newlines into text / break / text
+      ---
+      duration_ms: 0.762729
+      ...
+    # Subtest: does not split inside code or inlineCode
+    ok 3 - does not split inside code or inlineCode
+      ---
+      duration_ms: 0.199134
+      ...
+    # Subtest: works through processor.use(plugin)
+    ok 4 - works through processor.use(plugin)
+      ---
+      duration_ms: 0.263193
+      ...
+    1..4
+ok 1 - @itslil/remark-breaks
+  ---
+  duration_ms: 4.064756
+  type: 'suite'
+  ...
+# Subtest: @itslil/remark-breaks closed lane
+    # Subtest: ships a closed artifact whose exports stay callable
+    ok 1 - ships a closed artifact whose exports stay callable
+      ---
+      duration_ms: 6.690717
+      ...
+    1..1
+ok 2 - @itslil/remark-breaks closed lane
+  ---
+  duration_ms: 7.949605
+  type: 'suite'
+  ...
+# Subtest: remarkBreaks
+    # Subtest: should expose the public api
+    ok 1 - should expose the public api
+      ---
+      duration_ms: 2.043359
+      ...
+    1..1
+ok 3 - remarkBreaks
+  ---
+  duration_ms: 3.217869
+  ...
+# Subtest: fixtures
+    # Subtest: no space
+    ok 1 - no space
+      ---
+      duration_ms: 7.410196
+      ...
+    # Subtest: one space
+    ok 2 - one space
+      ---
+      duration_ms: 1.235014
+      ...
+    # Subtest: two spaces
+    ok 3 - two spaces
+      ---
+      duration_ms: 1.299275
+      ...
+    # Subtest: three spaces
+    ok 4 - three spaces
+      ---
+      duration_ms: 0.882744
+      ...
+    # Subtest: carriage return
+    ok 5 - carriage return
+      ---
+      duration_ms: 0.824334
+      ...
+    # Subtest: carriage return + line feed
+    ok 6 - carriage return + line feed
+      ---
+      duration_ms: 0.800531
+      ...
+    # Subtest: after phrasing
+    ok 7 - after phrasing
+      ---
+      duration_ms: 1.61746
+      ...
+    # Subtest: before phrasing
+    ok 8 - before phrasing
+      ---
+      duration_ms: 1.265441
+      ...
+    # Subtest: multiple
+    ok 9 - multiple
+      ---
+      duration_ms: 1.11516
+      ...
+    # Subtest: none
+    ok 10 - none
+      ---
+      duration_ms: 0.696054
+      ...
+    # Subtest: document
+    ok 11 - document
+      ---
+      duration_ms: 7.077922
+      ...
+    1..11
+ok 4 - fixtures
+  ---
+  duration_ms: 26.064599
+  ...
+# Subtest: three independently targeted builds have current artifact and config hashes
+ok 5 - three independently targeted builds have current artifact and config hashes
+  ---
+  duration_ms: 3.67151
+  ...
+# Subtest: public comparison describes current versus original and distinguishes build stages
+ok 6 - public comparison describes current versus original and distinguishes build stages
+  ---
+  duration_ms: 0.543799
+  ...
+# Subtest: built Pages artifact contains the current data and measured downloads
+ok 7 - built Pages artifact contains the current data and measured downloads
+  ---
+  duration_ms: 0.752671
+  ...
+1..7
+# tests 22
+# suites 2
+# pass 22
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 409.756012

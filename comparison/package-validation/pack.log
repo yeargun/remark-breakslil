@@ -1,0 +1,5 @@
+
+> @itslil/remark-breaks@4.0.2 check:pack
+> node scripts/check-pack.mjs
+
+npm pack: 14 files, 7356 bytes packed, 25573 bytes unpacked
